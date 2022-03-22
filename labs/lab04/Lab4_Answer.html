@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Lab 2 </title>
+    <style>
+
+      .blue{
+        color:blue;
+      }
+      .outside-border{
+        border: 4px solid red;
+        border-radius: 5%;
+        width: 40%;
+        background-color: lightgray;
+      }
+      .marg{
+        margin: 5%;
+      }
+      input,hr{
+        margin-bottom: 5%;
+      }
+      select,input[type=password],input[type=text]{
+        width: 90%;
+      }
+      select:focus,input[type=password]:focus,input[type=text]:focus{
+        background-color: lightpink;
+        border: 2px;
+        border-style: inset;
+        outline: none;
+      }
+      div{
+        color: blue;
+      }
+      label{
+        color: black;
+      }
+      input[type=submit]{
+        background-color: lightblue;
+        border-radius: 15px;
+        border: 2px;
+        width: 30%;
+        padding: 10px;
+        border-style: outset;
+        color: green;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        position: relative;
+        left:40%;
+        margin-bottom: 0%;
+      }
+    </style>
+  </head>
+  
+  <body>
+     <div class="outside-border">
+          <div class="marg">
+            <h1> Registration Form </h1>
+            <hr />
+            <div>
+              <form action="process.php" method="post">
+                <div> <label> <div> Name:  </div>  <input type="text" name="name" placeholder="Enter your name..." /> </label> </div>
+                <div> <label> <div> Phone:  </div>  <input type="text" name="phone" placeholder="Enter your phone number..." /> </label> </div>
+                <div> <label> <div> Country:  </div>  
+                              <select name="country">
+                                <option> Please select your country... </option>
+                                <option> Bahrain </option>
+                                <option> Saudi Arabia </option>
+                                <option> Kuwait </option>
+                              </select>
+                      </label>
+                </div>
+                <div> <div> Gender: </div> 
+                      <label> Male <input type="radio" name="gender" value="male" checked="checked" /> </label> &nbsp; &nbsp; &nbsp; 
+                      <label> Female <input type="radio" name="gender" value="female" /> </label>
+                </div>
+                <div> <div> Languages:  </div>  
+                      <label> English <input type="checkbox" name="languages" value="english" /> </label> &nbsp; &nbsp; &nbsp; 
+                      <label> Arabic <input type="checkbox" name="languages" value="arabic" checked="checked" /> </label> &nbsp; &nbsp; &nbsp; 
+                      <label> French <input type="checkbox" name="languages" value="french" /> </label> &nbsp; &nbsp; &nbsp; 
+                      <label> Italian <input type="checkbox" name="languages" value="italian" /> </label> 
+                </div>
+                <div> <label> <div> Email:  </div>  <input type="text" name="email" placeholder="Enter your email address..." /> </label> </div>
+                <div> <label> <div> Password:  </div>  <input type="password" name="password" placeholder="Enter your password..." /> </label> </div>
+                <div> <label> <div> Confirm Password:  </div>  <input type="password" name="confirmpassword" placeholder="Enter your confirm password..." />    
+                      </label>          
+                </div>
+                <div> <input type="submit" value="Register" /> </div>
+              </form>
+            </div>
+          </div>
+     </div>
+  </body>
+</html>
