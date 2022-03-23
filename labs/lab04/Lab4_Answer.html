@@ -3,58 +3,64 @@
   <head>
     <title> Lab 2 </title>
     <style>
-
-      .blue{
-        color:blue;
-      }
       .outside-border{
+        margin: 20px;
+        padding: 20px;
         border: 4px solid red;
-        border-radius: 5%;
-        width: 40%;
+        border-radius: 20px;
+        width: 50%;
+        max-width: 50%;
+        min-width: 400px;
         background-color: lightgray;
       }
-      .marg{
-        margin: 5%;
-      }
-      input,hr{
+      select,input,hr{
         margin-bottom: 5%;
       }
       select,input[type=password],input[type=text]{
         width: 90%;
       }
       select:focus,input[type=password]:focus,input[type=text]:focus{
-        background-color: lightpink;
+        background-color: pink;
+        color: red;
         border: 2px;
         border-style: inset;
         outline: none;
       }
       div{
         color: blue;
+        font-weight: bold;
       }
       label{
         color: black;
+      }
+      .center{
+        width: 30%;
+        margin: auto;
       }
       input[type=submit]{
         background-color: lightblue;
         border-radius: 15px;
         border: 2px;
-        width: 30%;
-        padding: 10px;
+        width: 100%;
+        padding: 10%;
         border-style: outset;
         color: green;
         text-align: center;
         font-size: larger;
         font-weight: bold;
-        position: relative;
-        left:40%;
-        margin-bottom: 0%;
+        /* margin-bottom: 0%; */
+      }
+      input[type=submit]:hover{
+        background-color: lightpink;
+        color: red;
+        cursor: pointer;
       }
     </style>
   </head>
   
   <body>
      <div class="outside-border">
-          <div class="marg">
+          <div>
             <h1> Registration Form </h1>
             <hr />
             <div>
@@ -85,7 +91,7 @@
                 <div> <label> <div> Confirm Password:  </div>  <input type="password" name="confirmpassword" placeholder="Enter your confirm password..." />    
                       </label>          
                 </div>
-                <div> <input type="submit" value="Register" /> </div>
+                <div class="center"> <input type="submit" value="Register" /> </div>
               </form>
             </div>
           </div>
