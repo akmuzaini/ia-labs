@@ -1,0 +1,30 @@
+body{
+  font-size: 125%;
+}
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-element {
+  float: left;
+}
+
+.nav-element a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-element a:hover:not(.current) {
+  background-color: #111;
+}
+
+.current {
+  background-color: dodgerblue;
+}
