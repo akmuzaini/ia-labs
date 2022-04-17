@@ -1,30 +1,122 @@
-body{
-  font-size: 125%;
+:root{
+  --nav-border-b: 5px;
 }
-.nav-menu {
-  list-style-type: none;
+body{
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 125%;
+  background-color: #ddd;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
   overflow: hidden;
-  background-color: #333;
+  width: fit-content;
+  background-color: #1e44ff;
 }
 
 .nav-element {
   float: left;
 }
 
+.nav-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-element a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 6px 12px;
   text-decoration: none;
 }
-
+.nav-element a:not(.current){
+  border-bottom: var(--nav-border-b) solid #1e44ff;
+}
 .nav-element a:hover:not(.current) {
-  background-color: #111;
+  background-color: #1530b4;
+  border-bottom: var(--nav-border-b) solid #1530b4;
+
 }
 
 .current {
   background-color: dodgerblue;
+  border-bottom: var(--nav-border-b) solid white;
+}
+
+.container{
+  background-color: #f0f0f0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  width: 80%;
+  border: 10px solid #c0c0c0;
+  border-radius: 25px;
+  padding: 5%;
+  box-shadow: 4px 8px #888888;
+}
+p{
+  font-size: x-large;
+}
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 3px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+footer a{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #d6d6d6;
+  text-decoration: underline;
+}
+
+.listings{
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.listings tr td{
+  padding: 10px;
+  border: 4px solid #313dd8;
+  border-radius: 25px;
+}
+
+.cover{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 256px;
+}
+.book-title{
+  text-align: center;
+}
+
+.form-el{
+  margin: 8px 0;
+}
+
+select,textarea,input{
+  font-size: inherit;
+}
+
+select:focus,textarea:focus,input:focus{
+  border: 2px;
+  border-style: inset;
+  outline: none;
 }

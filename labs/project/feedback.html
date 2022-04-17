@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UBooks Store Feedback Page">
+    <meta name="keywords" content="Book, Books, Library, Online Store, Free">
+    <meta name="author" content="Abdulrahman Al-Muzaini">
     <title>UBooks - Feedback</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <ul class="nav-menu">
-        <li class="nav-element"><a href="./index.html">Home</a></li>
-        <li class="nav-element"><a href="./listings.html">Listings</a></li>
-        <li class="nav-element"><a class="current" href="./feedback.html">Feedback</a></li>
-      </ul>
-      <h1>this is the feedback page</h1>
+        <li class="nav-element">
+            <a href="./index.html">
+                <img class="nav-icon" src="./images/icons/home.png" alt="home">
+                Home
+            </a>
+        </li>
+        <li class="nav-element">
+            <a href="./listings.html">
+                <img class="nav-icon" src="./images/icons/listings.png" alt="home">
+                Listings
+            </a>
+        </li>
+        <li class="nav-element">
+            <a class="current" href="./feedback.html">
+                <img class="nav-icon" src="./images/icons/feedback.png" alt="home">
+                Feedback
+            </a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <form action="">
+            <div class="form-el">
+                <label>
+                    <div> Name: </div>
+                    <input type="text" name="name" placeholder="Enter your name..." />
+                </label>
+            </div>
+            <div class="form-el">
+                <label>
+                    <div> Phone: </div>
+                    <input type="text" name="phone" placeholder="Enter your phone number..." />
+                </label>
+            </div>
+            <div class="form-el">
+                <label>
+                    <div> E-Mail: </div>
+                    <input type="text" name="email" placeholder="Enter your email address..." />
+                </label>
+            </div>
+            <div class="form-el">
+                <label>
+                    <div> Subject: </div>
+                    <input type="text" name="subject" placeholder="Subject..." />
+                </label>
+            </div>
+            <div class="form-el">
+                <label>
+                    <div> Topic: </div>
+                    <select name="topic">
+                        <option> Please select the topic... </option>
+                        <option> Suggestion </option>
+                        <option> Complaint </option>
+                        <option> Idea </option>
+                        <option> Help </option>
+                        <option> Bug </option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-el">
+                <label>
+                    <div> Message: </div>
+                    <textarea name="message" id="" placeholder="your message..." cols="40" rows="10"></textarea>
+                </label>
+            </div>
+
+            <div class="form-el">
+                <input type="submit" value="Register" />
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright <a href="http://uqu.edu.sa">UQU</a> 2022-2022</p>
+    </footer>
 </body>
+
 </html>
