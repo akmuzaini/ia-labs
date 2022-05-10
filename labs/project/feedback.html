@@ -7,6 +7,7 @@
     <meta name="keywords" content="Book, Books, Library, Online Store, Free">
     <meta name="author" content="Abdulrahman Al-Muzaini">
     <title>UBooks - Feedback</title>
+    <link rel="shortcut icon" href="images/icons/site-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -33,12 +34,16 @@
     </ul>
 
     <div class="container">
-        <form action="">
+        <form action="" method="post" onsubmit="return validateForm();">
             <div class="form-el">
                 <label>
                     <div> Name: </div>
-                    <input type="text" name="name" placeholder="Enter your name..." />
+                    <input type="text" id="username" name="username" placeholder="Enter your name..." oninput="cv();"/>
                 </label>
+                <img id="username-err-icon" src="" alt="">
+                <span class="err" id="username-err-msg">
+                    Name must be longer than 6 characters!
+                </span>
             </div>
             <div class="form-el">
                 <label>
@@ -87,6 +92,7 @@
     <footer>
         <p>&copy; Copyright <a href="http://uqu.edu.sa">UQU</a> 2022-2022</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
